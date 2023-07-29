@@ -1,152 +1,220 @@
-<!--HTML Boilerplate-->  
-<!DOCTYPE html> <!--Tells browser about the language of the file-->
-<html lang="en"> <!--The core of the code. This is the language of the text content in this element
-                    Website targeted at english speakers-->
-    <head><!--Important information is kept here. This isn't for the user.-->
-        <meta charset="UTF-8"><!--Ensures characters are encoded correctly.-->
-        <title>Alison's Website</title><!--Title as seen on the tab head.-->
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body><!--Website content goes here.-->
-        <p>Sketchy Navigation Bar</p>
-        <table>
-            <tr>
-                <td>
-                    <a href="index.html">Home   </a>
-                </td>
-                <td>
-                    <a href="contact.html">Contact  </a>
-                </td>
-                <td>
-                    <a href="hobbies.html">Hobbies  </a>
-                </td>
-            </tr>
-        </table>
-        <table cellspacing="20">
-            <tr>
-                <td>
-                    <img src = "ProfileImage.jpeg" 
-                    alt="A profile picture of the esteemed Alison Soutar."
-                    width="200">
-                </td>
-                <td>
-                    <h1>Alison Soutar</h1>
-                    <p>An <strong>ordinary girl </strong>in an <em>even more ordinary</em> world.</p>
-                    <!--Use <em> instead of <i>. We don't care about styling, more about organising.
-                    <em> is a logical state, amd <i> is a physical state. You may want to edit how these
-                    logics are conveyed, e.g. making emphasised text read instead of italicised. Changing
-                    the logic of italics to do anything other than italisice makes no sense-->
-                    <p>I am young and hopelessly lost.
-                        <br>Hoping some day, some how, I will find something to do that I truly love (that will also make me fat stacks).
-                        <br>Doing this online front-end course in a desperate attempt to enter the development community and appear intelligent, all whilst having no idea how I managed to get my undergrad in Computer Science in the first place.
-                        <br> Anyway, this is my HTML website.
-                    </p>
-                </td>
-            </tr>
-        </table>
-        
-        
-        <hr size="3" noshade>
-        
-        <h3>Achievements</h3>
-        <ol type ="I"><!--You can use this to change how the list is ordered.-->
-            <li>Received five disctinctions in matric for achieving 80% or above.</li>
-            <li>A member of the <em><a href="https://humanities.uct.ac.za/undergraduate/academic-excellence">Dean's List</a></em> at UCT for all three years of Undergraduate study for achieving an average of 75% or above.</li>
-            <li>Received the <em><a href="https://www.bizcommunity.com/Article/196/12/172611.html#:~:text=Bob%20Rightford%2C%20a%20local%20advertising,founding%20fathers%2C%20has%20passed%20away.&text=Rightford%20was%20one%20of%20the,Tripp%20%26%20Makin%20(RSTM)">Bob Rightford</a> "Enough is Never Enough"</em> award at Red & Yellow for going above and beyond project requirements.</li>
-            <li>Received an invite to join the <em><a href="goldenkey.org">Golden Key Society</a></em>, only extended to students within the top 15% of acedemic performers.</li>
-        </ol>
+<head>
+  <meta charset="UTF-8">
+  <title>Alison Soutar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/120/google/350/woman-technologist-light-skin-tone_1f469-1f3fb-200d-1f4bb.png">
 
-        <hr size="3" noshade>
-        
-        <h3>Work Timeline</h3>
-        <table cellspacing ="5">
-            <thead>
-                <tr>
-                    <th>Dates</th>
-                    <th>Work</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2019-2021</td>
-                    <td>Undergraduate at University of Cape Town: Computer Science and Film History</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>Advanced Diploma at Red & Yellow Creative Academy</td>
-                </tr>
-                <tr>
-                    <td>2023</td>
-                    <td>Bartending & Fucking Around and Finding Out</td>
-                </tr>
-            </tbody>
-        </table>
+</head>
 
-        <hr size="3" noshade>
+<!--Font import-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-        <h3>Skills</h3>
-            <table>
-                <thead>
-                </thead>
-                    <tr>
-                        <td>
-                            <table cellspacing = "10">
-                                <tr>
-                                    <td>Java</td>
-                                    <td>⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td>
-                                    <td>⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>Bootstrap</td>
-                                    <td>⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>Figma</td>
-                                    <td>⭐⭐⭐⭐</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table cellspacing = "10">
-                                <tr>
-                                    <td>Interface Design</td>
-                                    <td>⭐⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>Communication</td>
-                                    <td>⭐⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>Doccumentation</td>
-                                    <td>⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>User Testing</td>
-                                    <td>⭐⭐⭐⭐</td>
-                                </tr>
-                            </table>
-                        </td>
+<body>
+    <!--Title section-->
+    <div id="nav-bar" class="primary">
+        <div id="logo">
+            Alison Soutar
+        </div>
+        <div id="nav-items">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
 
-
-                    </tr>
-                <tbody>
-
-                </tbody>
-            </table>
-        
-
-    <hr size="3" noshade>
-        
-        <h3><a href="hobbies.html">Hobbies</a></h3>
+    <div id="site-container">
+        <div id="landing-home">
+            <h1 style="color: white; text-align: center;">Hi!<br>I'm <span style="color: #617A55">Alison</span>.</h1>
+            <img 
+            id="image-profile" 
+            src = "images/profile.jpeg" 
+            alt="A profile picture of the esteemed Alison Soutar."
+            width="220"
+            height="220">
+        </div>
        
-    </body>
+        <p>And I like designing and creating <span>ergonomic</span>, <span>interactive</span> and <span>efficent</span> websites.</p>
+        <hr>
+        
+        <!--"Hard skills" section-->
+        <div class="title">
+            <a href="skills.html"><h2>Hard skills</h2></a>
+            <p>A high-level summary of a few of my technical skills and abilities.</p>
+        </div>
+        <div class="container">
 
-    <footer><!--This website has feet.-->
-        <h3><a href="contact.html">Contact details</a></h3>
+            <div class="card large">
+                <img src ="images/icon-architecture-secondary.png"
+                alt="image of overlapping layers">      
+                <div>
+                    <h3>Fundamentals</h3>
+                    <p>Although I have experience in practical implementation, I have in-depth understanding of commonly used design 
+                        systems, methodologies and practises. I am able to adapt to new concepts quickly, and am familiar with architecture patterns,
+                        multi-layer architecture, agile development, concurrent and parallel programming - to name a few.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card large">
+                <img src ="images/icon-back-secondary.png"
+                alt="image of {..} text">      
+                <div>
+                    <h3>Backend</h3>
+                    <p>I have three years undergraduate experience with backend development principles, design and execution.
+                    I aim to create code that is highly efficent and easy to read. I religiously follow coding best-practises, 
+                    constantly refining and refactoring existing code ensuring it is readable, useful <em>and</em> reusable. 
+                    </p>
+                </div>
+            </div>
 
-    </footer>
+        
+            <div class="card large">
+                <img src ="images/icon-front-secondary.png"
+                alt="image of text illustrating front-end">      
+                <div>
+                    <h3>Frontend</h3>
+                    <p>I have thorough understanding of basic front-end coding principles and practise. I am well-versed 
+                        in good design practise. My websites are goal-oriented, and drive users towards completing a desired action.
+                        I am constantly ensuring my websites are fully functional and user-friendly.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card large">
+                <img src ="images/icon-ux-secondary.png"
+                alt="image of a smiling emoji">      
+                <div>
+                    <h3>User experience design</h3>
+                    <p> I am proficient in analysing human behaviour and solving problems in a unique way with practical and strategic design skills. 
+                        I am able to take a project from the conceptual stage into interactive prototyping and further into a working front-end final version.
+                        Designs are ergonomic and straightforward - while remaining inspiring and refreshing.    
+                    </p>
+                </div>
+            </div>
 
-</html>
+            
+
+        </div>
+
+        <!--"Soft skills" section-->
+        <hr>
+        <div class="title">
+            <a href="skills.html"><h2>Soft skills</h2></a>
+            <p>Examples of a few personality attributes conducive a productive work environment.</p>
+        </div>
+        <div class="container">
+            <div class="card small">
+                <img src ="images/icon-enthusiastic.png"
+                alt="image of a smiling emoji with sparkles">      
+                <div>
+                    <h3>Enthusiastic</h3>
+                    <p> I am eager to get involved in new projects and will approach tasks with energy and enthusiasm. 
+                        I look forward to taking on new challanges.
+                    </p>
+                </div>
+            </div>
+            
+
+            <div class="card small">
+                <img src ="images/icon-collaborative.png"
+                alt="image of two people getting along">      
+                <div>
+                    <h3>Collaborative</h3>
+                    <p> I work well with others, and am able to thrive in a team environment. 
+                        I enjoy learning from my peers and sharing ways to improve with one another.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card small">
+                <img src ="images/icon-studious.png"
+                alt="image of an open textbook">      
+                <div>
+                    <h3>Studious</h3>
+                    <p>When I encounter an unfamiliar problem, I research solutions thoroughly to select the most effective option.
+                        I ensure I have an in-depth understanding of challanges I face.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card small">
+                <img src ="images/icon-creative.png"
+                alt="image of {..} text">      
+                <div>
+                    <h3>Creative</h3>
+                    <p> I am an out-of-the-box thinker, and naturally explore creative solutions to complicated problems.
+                        This means I am constantly trying new ways to reach plausible solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card small">
+                <img src ="images/icon-determined.png"
+                alt="image of a determined emoji smiling with furrowed brows">      
+                <div>
+                    <h3>Determined</h3>
+                    <p>I am ambitious and will not surrender to difficulty quickly.
+                        I will show dogged determination in the face of difficulty until a suitable solution is reached.
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <!--Design objectives section?-->
+        <hr>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+  
+      <a href="https://www.linkedin.com/in/alisonsoutar/" target="_blank">
+        <div class="icon-circle">
+          <img
+          src = "images/linkedin.png" 
+          alt="App logo icon for LinkedIn."
+          width="30px"
+          height="30px">
+        </div>
+      </a>
+  
+      <a href="https://www.behance.net/alisonsoutar" target="_blank">
+        <div class="icon-circle">
+          <img
+          src = "images/behance.png" 
+          alt="App logo icon for Behance."
+          width="30px"
+          height="30px">
+        </div>
+      </a>
+  
+      <a href="https://github.com/ali-tar" target="_blank">
+        <div class="icon-circle">
+          <img
+          src = "images/github.png" 
+          alt="App logo icon for GitHub."
+          width="30px"
+          height="30px">
+        </div>
+      </a>
+  
+      <a href="https://www.figma.com/@alisonsoutar" target="_blank">
+        <div class="icon-circle">
+          <img
+          src = "images/figma.png" 
+          alt="App logo icon for Figma."
+          width="30px"
+          height="30px">
+        </div>
+      </a>
+    </div>
+  </footer>
