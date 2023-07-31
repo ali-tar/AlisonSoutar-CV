@@ -1,0 +1,321 @@
+/*Colour pallette*/
+.primary {
+    background-color: #617A55;
+}
+
+.secondary {
+    background-color: #A4D0A4;
+}
+
+.tertiary {
+    color: #F7E1AE;
+}
+
+.background {
+    color: #FFF8D6;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+h1{
+    font-size:2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+h2{
+    font-size:2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding:0;
+    height: auto;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #A4D0A4;
+    border-width: 12px;
+    width: 60px;
+    height: 0px;
+    background-color: rgba(0,0,0,0);
+    margin: 100px 100px;
+}
+
+
+#text-introduction {
+    text-align: center;
+
+}
+
+/*What the Homescreen landing page looks like*/
+#landing-home {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 200px;
+    width: 100%;
+    background-color: #A4D0A4;
+    color: white;
+    padding-top: 175px;
+    gap: 1rem;
+}
+
+/*What all the other landing pages look like*/
+#landing-page{
+    background-color: #A4D0A4;
+    margin: 0;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    place-items: center;
+    gap: 15rem;
+}
+
+
+#site-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#site-container p {
+    margin-top: 150px;
+}
+
+#site-container p span {
+    color: #617A55;
+    font-weight: bold;
+}
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0px;
+    min-height: 50px;
+    height:auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 2rem;
+    color: white;
+    text-decoration: solid;
+    grid-column: span 2;
+    margin-left: 2rem;
+}
+
+#nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-right: 1rem;
+}
+
+#nav-items a {
+    text-decoration: none;
+    text-decoration: double;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#nav-items a:visited{
+    color:white;
+}
+
+#nav-items a:hover{
+    color:#A4D0A4;
+}
+
+#image-profile {
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+#disclaimer{
+    display:none;
+}
+
+
+
+/*pretty looking containers for things*/
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto; 
+    gap: 1rem;
+    padding:25px;
+    margin: 25px;
+    background-color: #FFF8D6;
+    border-radius: 5%;
+    box-shadow: -5px 5px #F7E1AE;
+}
+
+.card-simple{
+    gap: 1rem;
+    padding:25px;
+    margin: 25px;
+    background-color: #FFF8D6;
+    border-radius: 5%;
+    box-shadow: -5px 5px #F7E1AE;
+}
+
+.blank{
+    height:10rem;
+}
+
+.card img{
+    height:100px;
+    float: left;
+    margin: 10px;
+}
+
+.card p{
+    padding-right: 5px;
+}
+
+.card > div{
+    gap: 1rem;
+    margin:0;
+    padding:0;
+
+}
+
+.description{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #A4D0A4;
+    width: auto;
+    gap:1rem;
+    padding: 0.5rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-blockout{
+    height: 50px;
+    width: 100%;
+    color:white;
+}
+.large{
+    max-width: 30%;
+    min-width:200px;
+    min-height: 150px;
+
+}
+
+.small{
+    max-width: 20%;
+    min-height: 100px;
+    min-width: 150px;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical{
+    flex-direction: column;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding:2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    row-gap: 2rem;
+}
+
+.title{
+    text-align: center;
+}
+
+.title a{
+    color:#617A55;
+    text-decoration: none;
+}
+
+.title a:visited{
+    color:#617A55;
+}
+
+.title a:hover{
+    color:#A4D0A4;
+}
+
+.icon-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #617A55;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+/*IPphone size*/
+@media (max-width: 1000px) {
+    
+    .card{
+        flex-direction: column;
+    }
+}
+
+.white{
+    color: white;
+}
+
+p{
+    color:#313131;
+}
+/*IPphone size*/
+@media (max-width: 600px) {
+
+}
