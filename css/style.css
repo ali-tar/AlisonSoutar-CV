@@ -100,6 +100,7 @@ hr{
     align-items: center;
     margin: 0px;
     padding: 0px;
+    gap: 2rem;
 }
 
 #site-container p {
@@ -166,7 +167,7 @@ hr{
 
 
 
-/*pretty looking containers for things*/
+/*pretty looking containers for things
 .card {
     display: flex;
     flex-direction: row;
@@ -180,6 +181,42 @@ hr{
     background-color: #FFF8D6;
     border-radius: 5%;
     box-shadow: -5px 5px #F7E1AE;
+}
+ */
+
+/*I realised including formatting and colour on a reusable thing wasn't great.
+I split it up for further use here.*/
+.card-aesthetic{
+    background-color: #FFF8D6;
+    border-radius: 5%;
+    box-shadow: -5px 5px #F7E1AE;
+    margin: 1rem;
+}
+
+.dynamic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto; 
+    gap: 1rem;
+    padding:25px;
+    margin: 25px;
+}
+
+.static{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 6fr;
+    width: auto;
+    max-width: 60%;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bigger-description{
+    grid-template-columns: 0.5fr 1fr 8fr;
 }
 
 .card-simple{
@@ -213,10 +250,8 @@ hr{
 }
 
 .description{
-    display:flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    display:grid;
+    grid-template-rows: auto; 
 }
 
 .footer{
@@ -230,11 +265,6 @@ hr{
     padding: 0.5rem;
 }
 
-.item{
-    display: flex;
-    flex-direction: column;
-}
-
 .nav-blockout{
     height: 50px;
     width: 100%;
@@ -243,9 +273,17 @@ hr{
 .large{
     max-width: 30%;
     min-width:200px;
-    min-height: 150px;
+    min-height: 150px;}
 
+.x-large{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: auto;
+    max-width: 60%;
+    gap: 2rem;
 }
+
+
 
 .small{
     max-width: 20%;
@@ -263,15 +301,6 @@ hr{
 
 .vertical{
     flex-direction: column;
-}
-
-.table{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    padding:2rem;
-    margin-left: 20%;
-    margin-right: 20%;
-    row-gap: 2rem;
 }
 
 .title{
@@ -317,5 +346,24 @@ p{
 }
 /*IPphone size*/
 @media (max-width: 600px) {
+    .bigger-description{
+        display:none;
+    }
+    .static{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        max-width: 60%;
+        padding: 1rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .icon-circle{
+        height: 50px;
+        width: 50px;
+    }
+
+
 
 }
