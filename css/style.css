@@ -213,7 +213,7 @@ I split it up for further use here.*/
     display: grid;
     grid-template-columns: 0.5fr 2fr 6fr;
     width: auto;
-    max-width: 60%;
+    max-width: 90%;
     padding: 1rem;
     justify-content: center;
     gap: 1rem;
