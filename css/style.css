@@ -158,6 +158,10 @@ hr{
     color:#A4D0A4;
 }
 
+#nav-selected{
+    color:red;
+}
+
 #image-profile {
     border-radius: 50%;
     align-items: center;
@@ -168,6 +172,7 @@ hr{
 #disclaimer{
     display:none;
 }
+
 
 
 
@@ -195,6 +200,7 @@ I split it up for further use here.*/
     border-radius: 5%;
     box-shadow: -5px 5px #F7E1AE;
     margin: 1rem;
+    padding: 2rem;
 }
 
 .dynamic{
